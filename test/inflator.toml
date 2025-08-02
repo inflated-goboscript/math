@@ -3,3 +3,5 @@ name = 'test'
 username = "FAReTek1"
 
 [dependencies]
+assert = "https://github.com/FAReTek1/assert"
+math = ".."
