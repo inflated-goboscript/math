@@ -45,9 +45,6 @@
 # (Returns `MIN` for `VALUE` < `MIN`, `MAX` for `VALUE` > `MAX`)
 %define CLAMP(VALUE,MIN,MAX) ((MIN)*((VALUE)<=(MIN))) + ((MAX)*((VALUE)>=(MAX))) + ((VALUE)*((MIN)<(VALUE) and (VALUE)<(MAX)))
 
-# Return the `N`th bit of `V`'s binary representation.
-%define BIT(N, V) ((V) // antiln((N) * ln 2) % 2)
-
 # Return the distance between the points `(X1,Y1)` and `(X2,Y2)`.
 %define DIST(X1,Y1,X2,Y2) sqrt(((X2)-(X1))*((X2)-(X1))+((Y2)-(Y1))*((Y2)-(Y1)))
 
