@@ -1,6 +1,6 @@
 # inflator.toml syntax documentation: https://github.com/faretek1/inflator#inflator
 name = 'math'
 version = "v0.0.0"
-username = "FAReTek1"
+username = "inflated-goboscript"
 
 [dependencies]
