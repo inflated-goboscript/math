@@ -28,6 +28,12 @@ onflag {
     assert_eq NEGATIVE_CLAMP(1), 0, "NEGATIVE_CLAMP";
     assert_eq CLAMP(1, 0, 2), 1, "CLAMP(1, 0, 2)";
     assert_eq CLAMP(-1, 0, 2), 0, "CLAMP(-1, 0, 2)";
-    
+
     assert_eq LERP(0, 1, 0.5), 0.5, "LERP";
+
+    assert_eq round(ATAN2(-2, 1)), -63, "ATAN2: 1 ";
+    assert_eq round(ATAN2(-2, -1)), -117, "ATAN2: 2 ";
+    assert_eq round(ATAN2(-2, 0)), -90, "ATAN2: 3 ";
+    # note atan2 gives -180 here instead of 180. Both are technically correct, but it reflects a certain behaviour of the branch cut of atan2
+    assert_eq round(ATAN2(0, -2)), -180, "ATAN2: 4 ";
 }

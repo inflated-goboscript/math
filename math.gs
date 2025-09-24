@@ -1,4 +1,4 @@
-%define ATAN2(Y,X) (atan(Y / X) + 180 * (X < 0) * ((Y > 0) - (Y < 0)))
+%define ATAN2(Y,X) (atan(Y / X) + 180 * (X < 0) * (2 * (Y > 0) - 1))
 
 %define ACOSH(X) ln((X)+sqrt((X)*(X)-1))
 %define ASINH(X) ln((X)+sqrt((X)*(X)+1))
