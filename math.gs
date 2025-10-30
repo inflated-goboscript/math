@@ -57,7 +57,7 @@
 
 # Return SIGN of V. If V < 0, return -1, elif V == 0, return 0, else return 1
 # 'Undefined' behaviour when used with non-numbers or booleans
-%define SIGN(V) (V > 0) - (V < 0)
+%define SIGN(V) (((V) > 0) - ((V) < 0))
 
 # Linear interpolation from a to b, with a ratio of t
 %define LERP(A,B,T) (A) + ((B) - (A)) * (T)
